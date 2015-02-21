@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+     
+	<context:annotation-config />
+	<context:component-scan base-package="*" />
+	
+    <bean id="dataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:mysql://127.0.0.1:3306/dailyexercise?useUnicode=true&amp;characterEncoding=UTF-8</value>
+        </property>
+        <property name="username">
+            <value>root</value>
+        </property>
+        <property name="password">
+            <value>123456</value>
+        </property>
+    </bean>
+
+    <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+        <property name="dataSource"
+            ref="dataSource">
+        </property>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQLDialect
+                hibernate.hbm2ddl.auto=update
+                hibernate.show_sql=true
+                hibernate.format_sql=false
+            </value>
+        </property>
+        <property name="packagesToScan">
+        	<list>
+        		<value>*</value>
+        	</list>
+        </property>
+    </bean>
+    
+    <bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+   
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- 用户登录
+    <bean id="userDao" class="dao.impl.UserDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="userService" class="service.impl.UserServiceImpl">
+    	<property name="userDao" ref="userDao"/>
+    </bean>
+    <bean id="userAction" class="action.UserAction">
+    	<property name="userService" ref="userService"/>
+    </bean> -->
+    
+</beans>
