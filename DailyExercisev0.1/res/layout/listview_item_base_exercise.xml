@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/exer_choose_list_item_selector_two" android:layout_width="fill_parent" android:layout_height="@dimen/list_height">
+        <ImageView android:id="@+id/list_item_top_divider" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.6600001dip" android:contentDescription="@string/pic"/>
+        <ImageView android:background="#ff9dc19d" android:layout_width="fill_parent" android:layout_height="0.6600001dip" android:layout_alignParentBottom="true" android:contentDescription="@string/pic"/>
+        <ImageView android:id="@+id/icon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/pic"/>
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@+id/tvExerChooseListItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listview_item" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/imageView1" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/pic"/>
+    </RelativeLayout>
+</LinearLayout>

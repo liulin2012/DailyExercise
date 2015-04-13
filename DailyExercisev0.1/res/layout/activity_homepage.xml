@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffdff7df">
+    
+	<RelativeLayout android:background="@drawable/top_back_ground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="20.0sp" android:background="#00000000" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/app_name" android:layout_centerVertical="true" />
+        <LinearLayout android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_top_divider" android:contentDescription="@string/pic"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/llHomepageUser" android:background="@drawable/btn_color_selector" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:background="#00000000" android:textSize="14.0sp" android:textColor="#ff79d28e" android:id="@+id/tv_app_home_hello_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trial_user" />
+                <TextView android:background="#00000000" android:textSize="11.0sp" android:textColor="#ff79d28e" android:id="@+id/tv_app_home_hello_pleaselogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_login" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v4.view.ViewPager android:id="@+id/viewpager_homepage" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+    
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+    	<RelativeLayout android:id="@+id/container" android:background="#ffdff7df" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	       	<LinearLayout android:background="#ffdff7df" android:orientation="vertical" android:id="@+id/llHomepageMain" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	       		<RelativeLayout android:background="@drawable/workoutday_title_selector" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+	                   <ImageView android:id="@+id/ivHomepageMainTitle" android:background="@drawable/laba" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" android:contentDescription="@string/pic"/>
+	                   <TextView android:id="@+id/homepage1_notice" android:background="#00000000" android:textSize="13.0sp" android:textColor="#ff404040"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/notice" android:layout_toRightOf="@id/ivHomepageMainTitle" android:layout_centerVertical="true" />
+	               </RelativeLayout>
+	               <!-- 居家和健身中心 -->
+	               <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+	               	<LinearLayout android:id="@+id/llMainFirstRow" android:background="#ffffffff" android:layout_width="@dimen/divider_line" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+	                       <ImageView android:contentDescription="@string/pic" android:background="#ffb1d2b1" android:layout_width="@dimen/divider_line_half" android:layout_height="fill_parent" />
+	                   </LinearLayout>
+	                   <LinearLayout android:gravity="center" android:id="@+id/llHomepagePart_1" android:background="@drawable/list_item_green_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/llMainFirstRow" android:layout_alignParentLeft="true">
+	                       <ImageView android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/i1" android:scaleType="centerInside" android:contentDescription="@string/pic" />
+	                       <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+	                           <TextView android:background="#00000000" android:text="@string/livehome" style="@style/homepage_main_text" />
+	                           <TextView android:background="#00000000" android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/livehomedesc" />
+	                       </LinearLayout>
+	                   </LinearLayout>
+	                   <LinearLayout  android:gravity="center" android:id="@+id/llHomepagePart_2" android:background="@drawable/list_item_green_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/llMainFirstRow" android:layout_alignParentRight="true">
+	                       <ImageView android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/i2" android:scaleType="centerInside" android:contentDescription="@string/pic" />
+	                       <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+	                           <TextView android:background="#00000000" android:text="@string/buildbody" style="@style/homepage_main_text" />
+	                           <TextView android:background="#00000000" android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/buildbodydesc" />
+	                       </LinearLayout>
+	                   </LinearLayout>
+	               </RelativeLayout>
+	               
+	               <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+	                   <ImageView android:background="#ffb1d2b1" android:layout_width="fill_parent" android:layout_height="@dimen/divider_line_half" android:contentDescription="@string/pic"/>
+	                   <ImageView android:layout_width="@dimen/divider_line_half" android:layout_height="1.0dip" android:src="#ffb1d2b1" android:contentDescription="@string/pic"/>
+	               </LinearLayout>
+	               <!--  -->
+	               <RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+	               	<LinearLayout android:id="@+id/llMainSecondRow" android:background="#ffffffff" android:layout_width="@dimen/divider_line" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:layout_centerHorizontal="true">
+	                       <ImageView android:background="#ffb1d2b1" android:layout_width="@dimen/divider_line_half" android:layout_height="fill_parent" android:contentDescription="@string/pic"/>
+	                   </LinearLayout>
+	                   <LinearLayout  android:gravity="center" android:id="@+id/llHomepagePart_3" android:background="@drawable/list_item_green_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toLeftOf="@id/llMainSecondRow" android:layout_alignParentLeft="true">
+	                       <ImageView android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/i3" android:scaleType="centerInside" android:contentDescription="@string/pic" />
+	                       <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+	                           <TextView android:background="#00000000" android:text="@string/office" style="@style/homepage_main_text" />
+	                           <TextView android:background="#00000000" android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/officedesc" />
+	                       </LinearLayout>
+	                   </LinearLayout>
+	                   <LinearLayout android:gravity="center" android:id="@+id/llHomepagePart_4" android:background="@drawable/list_item_green_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/llMainSecondRow" android:layout_alignParentRight="true">
+	                       <ImageView android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/i4" android:scaleType="centerInside" android:contentDescription="@string/pic" />
+	                       <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+	                           <TextView android:background="#00000000" android:text="@string/more" style="@style/homepage_main_text" />
+	                           <TextView android:background="#00000000" android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/moredesc" />
+	                       </LinearLayout>
+	                   </LinearLayout>
+	               </RelativeLayout>
+	               
+	               <RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="57.329987dip">
+	               		<ImageView android:id="@+id/ivMainBtmCentre" android:background="@drawable/bottombar_bg" android:layout_width="64.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:contentDescription="@string/pic"/>
+	                    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_toLeftOf="@id/ivMainBtmCentre" android:layout_alignParentLeft="true">
+	                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHomepageExers" android:background="@drawable/homepage_btm_side_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+	                            <TextView android:background="#00000000" android:textSize="10.0sp" android:textColor="#ff0e481b" android:gravity="center" android:id="@+id/touch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exerciselib" android:drawableTop="@drawable/homepage_exers" />
+	                        </LinearLayout>
+	                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHomepageDiy" android:background="@drawable/homepage_btm_side_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+	                            <TextView android:background="#00000000" android:textSize="10.0sp" android:textColor="#ff0e481b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selfplan" android:drawableTop="@drawable/homepage_diy" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+	                    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_toRightOf="@id/ivMainBtmCentre" android:layout_alignParentRight="true">
+	                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHomepageHeartBeat" android:background="@drawable/homepage_btm_side_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+	                            <TextView android:background="#00000000" android:textSize="10.0sp" android:textColor="#ff0e481b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heartbeat" android:drawableTop="@drawable/icon_heartbeat" />
+	                        </LinearLayout>
+	                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHomepageWeatherInfo" android:background="@drawable/homepage_btm_side_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+	                            <TextView android:background="#00000000" android:textSize="10.0sp" android:textColor="#ff0e481b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weatherinfo" android:drawableTop="@drawable/homepage_weatherinfo" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+               </RelativeLayout>
+       	</LinearLayout>
+       	<!-- 隐藏起来的底部按钮，点击我的计划才显示出来 -->
+       	<LinearLayout android:orientation="vertical" android:id="@+id/llHomepageSec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+               <ListView android:id="@+id/lvHomepageSec" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@null" android:layout_weight="1.0" />
+               <RelativeLayout android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="57.329987dip">
+                   <ImageView android:id="@+id/ivSecBtmCentre" android:layout_width="64.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:contentDescription="@string/pic" />
+                   <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llHomepageCalendar" android:background="@drawable/homepage_btm_side_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/ivSecBtmCentre" android:layout_alignParentLeft="true">
+                       <TextView android:textSize="12.0sp" android:textColor="#ff0e481b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exercisecalender" android:drawableTop="@drawable/homepage_calendar" />
+                   </LinearLayout>
+                   <RelativeLayout android:orientation="vertical" android:id="@+id/llHomepageAllPlan" android:background="@drawable/homepage_btm_side_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/ivSecBtmCentre" android:layout_alignParentRight="true">
+                       <TextView android:textSize="12.0sp" android:textColor="#ff0e481b" android:gravity="center" android:id="@+id/tvHomepageAllPlan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixplan" android:drawableTop="@drawable/homepage_all_plan" android:layout_centerInParent="true" />
+                       <TextView android:textSize="8.799988sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvHomepageAllPlanNotice" android:background="@drawable/homepage_plan_notice" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tvHomepageAllPlan" android:layout_alignRight="@id/tvHomepageAllPlan" />
+                   </RelativeLayout>
+               </RelativeLayout>
+           </LinearLayout>
+       </RelativeLayout>
+       <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/btnHomePageCenter" android:background="@drawable/homepage_btm_center_selector" android:layout_width="74.66998dip" android:layout_height="74.66998dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+           <ImageView android:background="#00000000" android:id="@+id/ivHomePageCenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/homepage_center_plan" android:contentDescription="@string/pic" />
+           <TextView android:background="#00000000" android:textSize="11.0sp" android:textColor="#ffffffff" android:id="@+id/tvHomePageCenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/myplan" />
+       </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

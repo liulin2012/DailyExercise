@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffdff7df" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tblTitle" android:background="@drawable/top_back_ground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <RelativeLayout android:id="@id/top_left_bg" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="44.0dip" android:layout_height="44.0dip">
+            <ImageView android:id="@id/iv_top_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/topbar_title_text_size" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/tv_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/exercise_data" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" >
+
+     <RelativeLayout
+         android:id="@+id/daystatistics"
+         android:layout_width="fill_parent"
+         android:layout_height="150.0dip"
+         android:background="#FF3030" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="14dp"
+             android:layout_marginLeft="10dp"
+             android:text="@string/day_calories"
+             android:textColor="#ffffffff"
+             android:textSize="12sp" />
+
+         <TextView
+             android:id="@+id/today_heat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textView1"
+             android:layout_centerHorizontal="true"
+             android:text="@string/day_calories_value"
+             android:textColor="#ffffffff"
+             android:textSize="70sp" />
+     </RelativeLayout>
+          <RelativeLayout
+         android:id="@+id/sumstatistics"
+         android:layout_width="fill_parent"
+         android:layout_height="100.0dip"
+         android:background="#00000000" >
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="14dp"
+             android:layout_marginLeft="10dp"
+             android:text="@string/sum_calories"
+             android:textColor="#8B8B7A"
+             android:textSize="12sp" />
+
+         <TextView
+             android:id="@+id/total_heat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/textView3"
+             android:layout_centerHorizontal="true"
+             android:text="@string/sum_calories_value"
+             android:textColor="#FF3030"
+             android:textSize="40sp" />
+     </RelativeLayout>
+     <LinearLayout android:id="@+id/twostatistics"
+         android:layout_width="fill_parent"
+         android:layout_height="80.0dip"
+         android:background="#CCCCCC" android:orientation="horizontal" >
+         
+         <RelativeLayout
+         android:id="@+id/weekstatistics"
+         android:background="#CCCCCC"
+         android:gravity="center"
+         android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_height="fill_parent" android:layout_alignParentLeft="true" >
+
+         <TextView
+             android:id="@+id/title_week"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="14dp"
+             android:layout_alignParentLeft="true"
+             android:text="@string/week_calories"
+             android:textColor="#8B8B7A"
+             android:textSize="12sp" />
+
+         <TextView
+             android:id="@+id/week_heat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/title_week"
+             android:layout_centerHorizontal="true"
+             android:text="@string/week_calories_value"
+             android:textColor="#515151"
+             android:textSize="22sp" />
+         </RelativeLayout>
+         <RelativeLayout
+         android:id="@+id/monthstatistics"
+         android:background="#CCCCCC" 
+         android:gravity="center"
+         android:layout_width="0.0dip" android:layout_weight="1.0" android:layout_height="fill_parent"  android:layout_alignParentRight="true">
+
+         <TextView
+             android:id="@+id/title_month"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="14dp"
+             android:text="@string/month_calories"
+             android:textColor="#8B8B7A"
+             android:textSize="12sp" />
+
+         <TextView
+             android:id="@+id/month_heat"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/title_month"
+             android:layout_centerHorizontal="true"
+             android:text="@string/month_calories_value"
+             android:textColor="#515151"
+             android:textSize="22sp" />
+         </RelativeLayout>
+     </LinearLayout>
+
+         
+<!--  <WebView -->
+<!-- 		android:id="@+id/wv" -->
+<!-- 	    android:layout_width="wrap_content" -->
+<!-- 	    android:layout_height="fill_parent" -->
+<!--     /> -->
+     <LinearLayout android:layout_margin="10dip"  android:orientation="vertical" android:id = "@+id/graph_view" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+     </LinearLayout>
+     
+ </LinearLayout>
+</LinearLayout>

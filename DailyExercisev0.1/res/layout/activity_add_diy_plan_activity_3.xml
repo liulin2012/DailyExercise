@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffdff7df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/tblTitle" android:background="@drawable/top_back_ground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:layout_width="@dimen/mini_btn_size" android:layout_height="@dimen/mini_btn_size" android:layout_marginLeft="7.0dip" android:src="@drawable/icon_back" android:scaleType="centerInside" android:layout_centerVertical="true" android:contentDescription="@string/pic"/>
+        <Button android:id="@+id/btnPrev" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="43.0dip" android:layout_height="44.0dip" android:layout_centerVertical="true"  />
+        <TextView android:textSize="@dimen/topbar_title_text_size" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/period_set" android:layout_centerInParent="true" />
+    </RelativeLayout> 
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">   
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip" >
+       <LinearLayout android:background="@drawable/group_single_btn_selector" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">  
+            <TextView android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:text="@string/plan_name" />
+            <EditText android:textSize="25.0sp" android:id="@+id/editPlanname" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/myplan" android:singleLine="true" android:selectAllOnFocus="true" android:layout_weight="1.0" android:inputType="text" android:textColor="#ff000000"/>
+       </LinearLayout>
+         <TextView  android:layout_marginTop="15.0dip" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:text="@string/edit_plan_name" style="@style/reg_notice_text_style" android:gravity="center"/>
+       <DatePicker android:background="@drawable/group_single_btn_selector" android:calendarViewShown="false" android:id="@+id/datePicker1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center" />
+	   <TextView android:layout_marginTop="15.0dip" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:text="@string/choose_start_date" style="@style/reg_notice_text_style" android:gravity="center"/>
+	   <LinearLayout android:background="@drawable/group_single_btn_selector" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">  
+	     <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday1" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/monday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday2" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/tuesday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday3" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/wednesday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday4" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/thursday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday5" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/friday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday6" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/saturday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+         <CheckBox android:textSize="18.0sp" android:textColor="#ff000000" android:id="@+id/checkday7" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sunday" android:checkMark="?android:attr/listChoiceIndicatorMultiple" />
+	   </LinearLayout>
+	   <TextView android:layout_marginTop="15.0dip" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:text="@string/choose_repeat" style="@style/reg_notice_text_style" android:gravity="center"/>
+	   <LinearLayout android:background="@drawable/group_single_btn_selector" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">  
+       <TextView android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:text="@string/continue_period" />
+       <NumberPicker android:layout_marginRight="20dip" android:focusable="true" android:focusableInTouchMode="true" android:id="@+id/weeknum" android:layout_weight="1" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+       </LinearLayout>
+       <TextView  android:layout_marginTop="15.0dip" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:text="@string/choose_week_num" style="@style/reg_notice_text_style" android:gravity="center"/>
+      </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2dip">
+    <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/btnComplete" android:background="@drawable/button_green_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/finish_add_plan" />
+    </LinearLayout>
+    
+</LinearLayout>

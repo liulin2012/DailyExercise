@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:contentDescription="@string/pic" android:id="@+id/circle_divider_bg" android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.669983dip">
+        <ImageView android:contentDescription="@string/pic" android:id="@+id/circle_row_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:contentDescription="@string/pic" android:id="@id/lv_left_image" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/image_method" android:contentDescription="@string/pic" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/img_frame" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_play_clock" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/lv_left_image">
+            <RelativeLayout android:background="@drawable/icon_clock" android:layout_width="22.659973dip" android:layout_height="25.329987dip">
+                <TextView android:textSize="10.0sp" android:textColor="#ff636563" android:id="@+id/tv_play_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.5dip" android:text="@string/twoeight" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <TextView android:textSize="10.0sp" android:textColor="#ff9c9a9c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lv_desc_layout" android:layout_toLeftOf="@id/lv_right_arrow" android:layout_toRightOf="@id/ll_play_clock" style="@style/main_row_ly">
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textColor="@color/color_40" android:gravity="left" android:id="@+id/method_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_exercise" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_99" android:gravity="left" android:id="@+id/method_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/description" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:contentDescription="@string/pic" android:layout_gravity="center_vertical" android:id="@id/lv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_10_dip" android:src="@drawable/common_list_row_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+   		<TextView android:layout_toLeftOf="@id/lv_right_arrow" android:layout_centerVertical="true" android:textSize="16.0sp" android:typeface="sans" android:textColor="@color/color_40"  android:id="@+id/today_method_isComplete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish" android:singleLine="true" />
+        </RelativeLayout>
+    <View android:id="@+id/superset_divide_line" android:background="@color/superset_divide_color" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+</LinearLayout>

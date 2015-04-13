@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/tblTitle" android:background="@drawable/top_back_ground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <RelativeLayout android:id="@+id/top_left_bg" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="44.0dip" android:layout_height="44.0dip">
+            <ImageView android:id="@+id/iv_top_left" android:contentDescription="@string/pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/topbar_title_text_size" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@+id/tv_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_exercise" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="75.0dip">
+            <TextView android:textSize="35.0sp" android:textColor="#ff055c1f" android:id="@+id/btnVoicePlaySkipDesign" android:background="@drawable/btn_color_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timer" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/stepImage" android:contentDescription="@string/pic" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/arnold_dumbbell_press_1" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        <TextView android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:id="@+id/tvVoicePlayExerDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/step_1" />
+        <RelativeLayout android:background="@drawable/voiceplay_btm_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@+id/rlVoicePlaySetting" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="51.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@+id/ivVoicePlaySound" android:contentDescription="@string/pic" android:src="@drawable/icon_sound_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <LinearLayout android:background="#ff37824b" android:layout_width="@dimen/divider_line" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <ImageView android:background="#ff064516" android:contentDescription="@string/pic" android:layout_width="@dimen/divider_line_half" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlVoicePlayList" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="51.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/rlExerciseComplete" android:contentDescription="@string/pic" android:background="@drawable/icon_complete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <LinearLayout android:gravity="right" android:background="#ff37824b" android:layout_width="@dimen/divider_line" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                    <ImageView android:contentDescription="@string/pic" android:background="#ff064516" android:layout_width="@dimen/divider_line_half" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rlVoicePlayPause" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/rlVoicePlayList" android:layout_toRightOf="@id/rlVoicePlaySetting">
+                <ProgressBar android:id="@+id/pbVoicePlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:progressDrawable="@drawable/voiceplay_progress" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textColor="#ff07571b" android:id="@+id/tvVoicePlayPause" android:background="@drawable/voiceplay_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

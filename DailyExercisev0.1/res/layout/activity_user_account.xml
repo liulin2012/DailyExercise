@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/top_back_ground" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <RelativeLayout android:id="@id/top_left_bg" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="44.0dip" android:layout_height="44.0dip">
+                <ImageView android:id="@id/iv_top_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_top_right" android:visibility="invisible" android:layout_width="46.0dip" android:layout_height="44.0dip" android:layout_alignParentRight="true">
+                <Button android:id="@id/top_right_bg" android:background="@drawable/topbar_minibtn_bg_selector" android:layout_width="43.0dip" android:layout_height="44.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="@dimen/mini_btn_size" android:layout_height="@dimen/mini_btn_size" android:layout_marginRight="7.0dip" android:src="@drawable/icon_complete" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <Button android:id="@+id/btn_edit_user_setting" android:background="#00000000" android:layout_width="43.0dip" android:layout_height="44.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@+id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人信息" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:id="@+id/llUserinfoInRl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_colon" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@+id/tvUserInfoAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_colon" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="105.0dip" android:layout_below="@id/llUserinfoInRl">
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView android:id="@+id/scrollView1" android:layout_width="fill_parent" android:layout_height="0dip" android:layout_weight="1" >
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rlUserInfoSettingLogout" android:background="@drawable/group_single_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip">
+                    <TextView android:textColor="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="注销" android:layout_centerVertical="true" />
+                    <ImageView android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/mini_right_arrow" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/group_list_out_shap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基本设置" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoName" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/txUserInfoName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/name_register" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etUserInfoName" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoPassWord" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/txPassWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/modify_pwd" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etPassWord" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoHeight" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/height_register" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etUserInfoHeight" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoWeight" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/weight_register" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etUserInfoWeight" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoAge" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/age" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etUserInfoAge" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoSex" android:background="@drawable/group_bottom_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sex" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/etUserInfoSex" android:background="#00000000" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="123" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/group_list_out_shap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <LinearLayout android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博设置" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoSina" android:background="@drawable/group_mid_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="新浪微博" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/tvUserInfoSina" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="空" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+                    <ImageView style="@style/divider_line" />
+                    <LinearLayout android:id="@+id/llUserInfoTx" android:background="@drawable/group_bottom_btn_selector" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                        <TextView android:textColor="#ff666666" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="腾讯微博" />
+                        <TextView android:textColor="@color/font_dark_green" android:gravity="right|center" android:id="@+id/tvUserInfoTx" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="空" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="6.0dip" style="@style/mini_right_arrow" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2dip">
+    	<Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/btnCancel" android:background="@drawable/button_green_selector" android:layout_width="0dip" android:layout_weight="1" android:layout_height="40.0dip" android:text="@string/cancel_modify" />
+    	<Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@+id/btnConfim" android:background="@drawable/button_green_selector" android:layout_width="0dip" android:layout_weight="1" android:layout_height="40.0dip" android:text="@string/confirm_modify" />
+    </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/userinfo_cover" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@+id/rlControlClick" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@+id/rlWheelBg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llWheelBg" android:background="@drawable/wheel_layout_bg" android:layout_width="fill_parent" android:layout_height="@dimen/wheel_view_height" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@+id/userinfoWheeltitle" android:background="@drawable/wheel_title" android:layout_width="fill_parent" android:layout_height="@dimen/wheel_title_height" android:layout_above="@+id/llWheelBg">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wheel_title_button" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:id="@+id/btn_local_setting_wheel" android:background="#00000000" android:layout_width="@dimen/wheel_title_height" android:layout_height="@dimen/wheel_title_height" android:layout_alignParentRight="true" />
+            <ImageView android:background="@drawable/wheel_title_divider" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_toLeftOf="@id/btn_local_setting_wheel" />
+            <TextView android:textColor="#ffffffff" android:id="@+id/tvUserinfoWheelTitle" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:orientation="vertical" android:id="@+id/llExerList" android:background="@drawable/list_item_green_selector" android:layout_width="fill_parent" android:layout_height="@dimen/list_height" >
+	    <ImageView android:contentDescription="@string/pic" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+	    <ImageView android:contentDescription="@string/pic" android:background="#ff9dc19d" android:layout_width="fill_parent" android:layout_height="0.6600001dip" android:layout_alignParentBottom="true" />
+	    <ImageView android:contentDescription="@string/pic" android:id="@+id/listview_item_add_plan_exercise_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_centerVertical="true" />
+	    <ImageView android:id="@+id/listview_item_add_plan_exercise_img" android:contentDescription="@string/pic" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/img_frame" android:layout_centerVertical="true" android:scaleType="fitXY"/>
+	    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/listview_item_add_plan_exercise_txtName" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:text="@string/abc" android:singleLine="true" android:layout_centerInParent="true" android:layout_toRightOf="@id/listview_item_add_plan_exercise_icon" />
+	    <CheckBox android:id="@+id/listview_item_add_plan_exercise_select_plan" android:background="@drawable/checkbox_selector" android:focusable="false" android:clickable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+	</RelativeLayout>
+</LinearLayout>

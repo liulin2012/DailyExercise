@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whu.dailyexercise"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ico_dailyexercise"
+        android:label="@string/app_name"
+        android:theme="@style/NewTheme" >
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.whu.dailyexercise.activities.HomepageActivity_1"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.BaseExerciseActivity"
+            android:label="@string/title_activity_base_exercise" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.BaseExerciseListActivity"
+            android:label="@string/title_activity_base_exercise_list" >
+        </activity>
+        <activity android:name="com.whu.dailyexercise.activities.RegisterActivity_1" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.SingleExerciaseActivity"
+            android:label="@string/title_activity_single_exerciase" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.ExerciseTimerActivity"
+            android:label="@string/title_activity_exercise_timer" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.UserAccountActivity"
+            android:label="@string/title_activity_user_account" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AddDiyPlanActivity_1"
+            android:label="@string/title_activity_add_diy_plan_activity_1" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AddDiyPlanActivity_2"
+            android:label="@string/title_activity_add_diy_plan_activity_2" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AddDiyPlanActivity_3"
+            android:label="@string/title_activity_add_diy_plan_activity_3" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.UserCenterActivity"
+            android:label="@string/title_activity_user_center" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.WeatherInfoActivity"
+            android:label="@string/title_activity_weather_info" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.HomepageActivity_2"
+            android:label="@string/title_activity_homepage_activity_2" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.HeartBeatActivity"
+            android:label="@string/title_activity_heart_beat" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AdjustPlanActivity"
+            android:label="@string/title_activity_adjust_plan" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.ExerciseDataActivity"
+            android:label="@string/title_activity_exercise_data" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.VisualImageActivity"
+            android:label="@string/title_activity_visual_image" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AdjustSinglePlanActivity"
+            android:label="@string/title_activity_adjust_single_plan" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.TodayPlanActivity"
+            android:label="@string/title_activity_today_plan" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.TodayExericseActivity"
+            android:label="@string/title_activity_today_exericse" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.TodayExerciseTimerActivity"
+            android:label="@string/title_activity_today_exercise_timer" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="obzcbqBqeISKOPTNH4jyljRV" />
+
+        <activity
+            android:name="com.whu.dailyexercise.activities.VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.SinaShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_sina_share"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.PublishActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.ConversationActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.FriendActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralDataShowActivity" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.ShareChooseActivity"
+            android:label="@string/title_activity_share_choose" >
+        </activity>
+        <activity android:name="com.whu.dailyexercise.activities.PublishNewActivity" />
+        <activity
+            android:name="com.whu.dailyexercise.activities.SoftwareConfigActivity"
+            android:label="@string/title_activity_software_config" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.StaticPlanListActivity"
+            android:label="@string/title_activity_static_plan_list" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.StaticPlanAddActivity"
+            android:label="@string/title_activity_static_plan_add" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.StaticPlanAddStepActivity"
+            android:label="@string/title_activity_static_plan_add_step" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.HelpUsActivity"
+            android:label="@string/title_activity_help_us" >
+        </activity>
+        <activity
+            android:name="com.whu.dailyexercise.activities.RegisterActivity_0"
+            android:label="@string/title_activity_register_activity_0" >
+        </activity>
+    </application>
+
+</manifest>

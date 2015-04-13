@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <item type="color" name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</item>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</item>
+    <item type="color" name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</item>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#ff333333</color>
+    <color name="dialog_title_blue">#ff9cccf7</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="selected">#ffff0000</color>
+    <color name="noSelected">#ffffffff</color>
+    <color name="background">#ff000000</color>
+    <color name="bgWellcom">#ff888888</color>
+    <color name="ListBack">#ff006cd8</color>
+    <color name="text">#ffffffff</color>
+    <color name="button">#e0e00000</color>
+    <color name="unfocused">#cccccccc</color>
+    <color name="pressed">#ffff0000</color>
+    <color name="focused">#ffff0000</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="home_page_bg">#ff5c8fc4</color>
+    <color name="track_gray">#ffd0d0d0</color>
+    <color name="color_33">#ff333333</color>
+    <color name="color_66">#ff666666</color>
+    <color name="color_40">#ff404040</color>
+    <color name="color_99">#ff999999</color>
+    <color name="color_13">#ff131313</color>
+    <color name="color_46">#ff464646</color>
+    <color name="color_4E">#ff4e4e4e</color>
+    <color name="color_line">#ff115622</color>
+    <color name="list_item_hover">#ffcdcdcd</color>
+    <color name="tag_label_text">#ff448755</color>
+    <color name="tag_text">#ff337544</color>
+    <color name="common_bg_color">#ffdff7df</color>
+    <color name="panel_click_bg">#ffa5d3aa</color>
+    <color name="list_item_select_color">#ffaed5b3</color>
+    <color name="list_item_gradient_color">#ff9dc19d</color>
+    <color name="superset_divide_color">#ff9cc39c</color>
+    <color name="calendar_header_normal_color">#ff6b696b</color>
+    <color name="calendar_divide_color">#ff63a673</color>
+    <color name="calendar_text_light_color">#ff9c9a9c</color>
+    <color name="calendar_text_dark_color">#ff101010</color>
+    <color name="calendar_unselect_color">#ffa1454a</color>
+    <color name="ck_font_color">#ff424142</color>
+    <color name="font_dark_green">#ff115522</color>
+    <color name="plan_track_dark_color">#ffc0e3c0</color>
+    <color name="plan_track_light_color">#ffdff7df</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/dlg_title" android:textColor="@color/white" android:gravity="center" android:background="@drawable/rename_dialog_header" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="修改计划名称" />
+    <LinearLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_40" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="6.0dip" android:text="请输入：" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="15.0dip">
+            <EditText android:textColorHint="@color/color_99" android:id="@+id/ed_new_plan_name" android:background="@null" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:selectAllOnFocus="true" android:layout_weight="1.0" android:imeOptions="actionDone" />
+            <View android:background="#ff9c9a9c" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="#ff81a48a" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/rename_dialog_bottom_shape" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:textSize="16.0sp" android:textColor="#ff276536" android:id="@+id/btn_cancel" android:background="@drawable/rename_dialog_bottom_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_cancel" android:layout_weight="1.0" />
+        <View android:background="#ff81a48a" android:layout_width="0.6600001dip" android:layout_height="fill_parent" />
+        <Button android:textSize="16.0sp" android:textColor="#ff276536" android:id="@+id/btn_ok" android:background="@drawable/rename_dialog_bottom_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

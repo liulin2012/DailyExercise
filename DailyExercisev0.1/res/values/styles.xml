@@ -1,0 +1,75 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!--New Theme-->
+    <style name="NewTheme">
+        <!--No Title-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextStyle">@style/Widget.EditText.Black</item>
+      
+    </style>
+    <style name="Widget.EditText.Black" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="homepage_main_text">
+		<item name="android:textSize">20.0sp</item>
+		<item name="android:textColor">#ff156326</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="reg_notice_text_style">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/reg_notice_bg9</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">15.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="exer_choose_button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:background">@drawable/exer_choose_btn_selector</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="divider_line">
+        <item name="android:background">#ff64a477</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+    <style name="mini_right_arrow">
+        <item name="android:layout_width">22.0dip</item>
+        <item name="android:layout_height">22.0dip</item>
+        <item name="android:src">@drawable/arrow_new</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">右箭头</item>
+        </style>
+    <style name="main_row_ly">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>
